@@ -50,6 +50,7 @@ Much of the code is copied directly from Email::MIME::Creator.
 	        parts => [ $body, @parts ],
 	);
 	
+	# Build and output the MIME structure, with constant mem usage
 	my $iter= $multipart->as_string_iter;
 	while(defined(my $buf= $iter->())) {
 	        print STDOUT $buf;
