@@ -4,6 +4,8 @@ Email::MIME::Lazy
 A modified version of Email::MIME that tries hard to keep everything
 in memory only once.
 
+Much of the code is copied directly from Email::MIME::Creator.
+
 # Example
 
 	my $cid = "AAAAAAAAAAA";
